@@ -117,10 +117,12 @@ void ff() {
 void main() {
 	setlocale(LC_ALL, "Russian");
 
-	DERIVED_l ob(26, 3, 20, 1);
-	cout << "BASE: " << sizeof(BASE) << endl;
-	cout << "DERIVED: " << sizeof(DERIVED) << endl;
+	DERIVED ob(14, 7, 10, 1);
 	cout << ob;
 
-	ob.foo();
+	DERIVED_l ob1(26, 3, 20, 1);
+	cout << ob1;
+
+	ob1.foo();
+
 }
